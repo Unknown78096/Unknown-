@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary, My Surya!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #e91e63;
+        }
+        .photo {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+        .message {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #e91e63;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #c2185b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Happy Anniversary, My Surya!</h1>
+            <img src="us-together.jpg" alt="You and Surya" class="photo">
+            <p class="message">My dearest Surya, On this special day, celebrating our anniversary, my heart is completely filled with love for you.</p>
+        </header>
+
+        <section id="our-story">
+            <h2>Our Story</h2>
+            <p class="message">It feels like a beautiful dream that started the day we met. I vividly remember the first time we met — a magical moment that changed everything. Looking back at our journey, I cherish our first date and every milestone we've shared, each one a testament to the beautiful bond we have.</p>
+        </section>
+
+        <section id="why-i-love-you">
+            <h2>Why I Love You</h2>
+            <p class="message">Surya, my love, my reasons for loving you are endless. Your gentle heart makes the world a better place, and your unwavering determination inspires me every single day. I adore the way you always make me laugh and how you encourage my dreams with such passion. I'll never forget the time you held my hand during a tough moment, showing me the depth of your love. It's in these little things and grand gestures that my love for you deepens with each passing moment.</p>
+        </section>
+
+        <section id="photo-gallery">
+            <h2>Photo Gallery</h2>
+            <img src="us-together.jpg" alt="Me and Surya, a special moment" class="photo">
+        </section>
+
+        <section id="music">
+            <h2>Our Song</h2>
+            <p class="message">Click the button to play "Shape of You" by Ed Sheeran:</p>
+            <button onclick="playSong()">Play Our Song</button>
+            <p id="play-msg" style="display:none; color:#e91e63; font-weight:bold;">Now playing "Shape of You" for you, my love!</p>
+            <audio id="song" controls style="display:none;">
+                <source src="Ed Sheeran - Shape Of You (Lyrics).mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section id="future-dreams">
+            <h2>Our Future</h2>
+            <p class="message">My dearest Surya, thinking about our future fills me with so much joy and anticipation. I love you, baby, and the thought of building our lives together, sharing every sunrise and every sunset, is my greatest dream. You are my everything, and the desire to marry you and spend eternity wrapped in your love grows stronger every day. Happy anniversary, my sweet baby. Our adventure has just begun, and I can't wait to see all the beautiful chapters we'll write together.</p>
+        </section>
+
+        <section id="anniversary-message">
+            <h2>My Special Message</h2>
+            <p class="message">Happy Anniversary, my beloved Surya. I love you more than words can express. You are my entire world, the person I was always meant to find. Every moment with you is precious, and the thought of a lifetime by your side is what I long for. Happy anniversary, my baby. I love you. ❤️</p>
+        </section>
+
+        <footer>
+            <p>© 2025 With all my love, Surya</p>
+        </footer>
+    </div>
+
+    <script>
+        function playSong() {
+            const audio = document.getElementById('song');
+            const msg = document.getElementById('play-msg');
+            audio.load();
+            audio.play();
+            msg.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
